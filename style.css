@@ -1,0 +1,47 @@
+body {
+  background-color: azure;
+}
+
+h1 {
+  text-align: center;
+}
+div,
+p {
+  border: solid;
+  margin: 0.5em;
+  padding: 0 1em;
+}
+
+div.container {
+  padding: unset;
+  flex-direction: row-reverse;
+  /* overflow: scrollw; */
+}
+
+div.center {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+div.album {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.album:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.description {
+  background-color: beige;
+}
+
+.cover {
+  background-color: gold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
